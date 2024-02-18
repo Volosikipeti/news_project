@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+
+}
+/* main props */
+#burger-button{
+    display: none;
+}
+#menuList{
+    display: none;
+}
+.mobile-menu .menu-list{
+    margin-top: 10px;
+    list-style: none;
+}
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-outline-light{
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+.button-outline-light:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.button-primary{
+    display: inline-block;
+    background-color: #1356ff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 45px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+.button-primary:hover{
+    opacity: 0.5;
+}
+.title-primary{
+    color: #1356ff;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 120px;
+}
+/* blocks */
+
+/* header */
+.header{
+    padding: 20px 0;
+    background-color: #1356ff;
+}
+.logo{
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav-list {
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* header */
+
+/* main */
+/* home */
+.home{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../image/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.home-title{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.home-description{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+/* home */
+/* last-news */
+.last-news{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+.news-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.news-card{
+    margin: 10px;
+    flex-basis: 22%;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.news-image{
+    text-align: center;
+}
+.news-image img{
+    width: 80%; 
+}
+.news-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.news-date{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+/* last-news */
+
+/* news-detail */
+.news-detail, .button-primary{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.news-detail-img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+.news-detail-description{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+.news-detail-date{
+    margin-bottom: 30px;
+}
+
+/* news-detail */
+/* main */
+
+
+
+/* footer */
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 90px 0;
+
+}
+/* footer */
+
+
+/* media */
+@media screen and (max-width: 900px) {
+    .container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #burger-button {
+        display: block;
+        background-color: #ffffff;
+        font-size: 20px;
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .home{
+        display: block;
+        padding: 90px 0px;
+        height: 100%;
+        text-align: center;
+    }
+    .home-title{
+        font-size: 32px;
+    }
+    .home-description{
+        width: 100%;
+        font-size: 14px;
+    }
+    .last-news{
+        height: 100%;
+        display: block;
+        padding: 90px 0;
+    }
+    .news-row{
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .news-image{
+        text-align: center;
+    }
+    .news-image img{
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+    }
+    .title-primary{
+        text-align: center;
+    }
+    .last-news{
+        height: 100%;
+        display: block;
+        padding: 90px 0;
+    }
+    .news-detail{
+        height: 100%;
+        display: block;
+        padding: 90px 0;
+    }
+    .news-detail-img{
+        text-align: center;
+    }
+    .news-detail, .button-primary{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+/* media */

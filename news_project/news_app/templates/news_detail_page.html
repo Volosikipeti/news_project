@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{news_detail_page}}</title>
+    <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="header">
+        <div class="containet">
+            <div class="row">
+                <a href="#" class="logo">Logo</a>
+                <ul class="header-nav">
+                    <li class="nav-list"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-list"><a href="#" class="nav-link">News</a></li>
+                    <li class="nav-list"><a href="#" class="nav-link">About</a></li>
+                </ul>
+                <button id="burger-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="menuList" class="container" style="display: none;">
+            <ul class="mobile-menu">
+            <li class="menu-list"><a href="#" class="nav-link">Home</a></li>
+            <li class="menu-list"><a href="#" class="nav-link">News</a></li>
+            <li class="menu-list"><a href="#" class="nav-link">About</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <main class="main">
+        <a href="#" class="button-primary">Back</a>
+        <section class="news-detail">
+            <div class="container">
+                <h1 class="title-primary">test</h1>
+                <div class="news-detail-img">
+                    <img src="./image/test-news.gif" alt="">
+                </div>
+                <p class="news-detail-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident atque alias facere perspiciatis. Tempora soluta mollitia illo totam ea, fugiat modi nemo ipsam porro voluptates accusantium ad excepturi est.</p>
+                <p class="news-detail-date">Posted<b>18.02.2024</b></p>
+            </div>
+        </section>  
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2024. Author: Volokov
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
