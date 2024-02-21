@@ -13,7 +13,7 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <a href="{% url 'home_page' %}" class="logo">Very interesting news</a>
+                <a href="{% url 'home_page' %}" class="logo">Logo</a>
                 <ul class="header-nav">
                     <li class="nav-list"><a href="{% url 'home_page' %}" class="nav-link">Home</a></li>
                     <li class="nav-list"><a href="{% url 'news_page' %}" class="nav-link">News</a></li>
@@ -35,7 +35,7 @@
         <section class="home">
             <div class="container">
                 <h1 class="home-title">Wellcome to my Application</h1>
-                <p class="home-description">Vsem hi, и да да я сделал это</p>
+                <p class="home-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt corrupti voluptates beatae quas voluptatibus. Suscipit veniam voluptatem quae pariatur eum quod qui id officiis neque. Illum voluptates aut quisquam optio.</p>
                 <a href="#Lastnews" class="button-outline-light">Last news</a>
             </div>
         </section>
@@ -52,7 +52,7 @@
                         <h3 class="news-date">{{post.post_date|date:"d.m.Y" }}</h3>
                         <a href="{% url 'news_detail_page' pk=post.pk %}" class="button-primary">Read</a>
                     </div>
-                    {% endfoк %}
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -60,7 +60,7 @@
 
     <footer class="footer">
         <div class="container">
-            &copy; 2024. Author: Em0nd
+            &copy; 2024. Author: Arkadiy
         </div>
     </footer>
 
