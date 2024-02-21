@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
-
+    font-family: "Inter", sans-serif;
 }
 /* main props */
-#burger-button{
+#burger-button {
     display: none;
 }
-#menuList{
+#menuList {
     display: none;
 }
-.mobile-menu .menu-list{
+.mobile-menu .menu-lsit {
     margin-top: 10px;
     list-style: none;
 }
-.container{
+.container {
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -26,7 +25,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.button-outline-light{
+.button-outline-light {
     display: inline-block;
     background-color: transparent;
     color: #ffffff;
@@ -37,13 +36,13 @@
     transition: 0.3s ease-in-out;
     font-weight: 600;
 }
-.button-outline-light:hover{
+.button-outline-light:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #000;
 }
-.button-primary{
+.button-primary {
     display: inline-block;
-    background-color: #1356ff;
+    background-color: #690aa8;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 45px;
@@ -51,23 +50,23 @@
     transition: 0.3s ease-in-out;
     font-weight: 600;
 }
-.button-primary:hover{
-    opacity: 0.5;
+.button-primary:hover {
+   opacity: 0.5; 
 }
-.title-primary{
-    color: #1356ff;
+.title-primary {
+    color: #690aa8;
     font-weight: 700;
     font-size: 35px;
-    margin-bottom: 120px;
+    margin-bottom: 20px;
 }
 /* blocks */
 
 /* header */
-.header{
-    padding: 20px 0;
-    background-color: #1356ff;
+.header {
+   padding: 20px 0;
+   background-color: #690aa8; 
 }
-.logo{
+.logo {
     display: inline-block;
     color: #ffffff;
     text-decoration: none;
@@ -77,65 +76,68 @@
     margin-right: 10px;
 }
 .nav-link {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
 /* header */
 
 /* main */
 /* home */
-.home{
+.home {
     color: #ffffff;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../image/home.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/cat.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
-.home-title{
+.home-title {
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 20px;
 }
-.home-description{
+.home-description {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 20px;
 }
 /* home */
 /* last-news */
-.last-news{
-    height: 100vh;
+.last-news, .news {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: #ffffff;
 }
-.news-row{
+.news-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-.news-card{
+.news-card {
     margin: 10px;
-    flex-basis: 22%;
+    flex-basis: 24%;
     background-color: #ffffff;
-    box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.4);
     padding: 20px;
     margin-bottom: 30px;
 }
-.news-image{
+.news-img {
     text-align: center;
 }
-.news-image img{
-    width: 80%; 
+.news-img img {
+    width: 128px;
+    height: 128px;  
+    object-fit: cover;
 }
-.news-title{
+.news-title {
     font-size: 20px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
-.news-date{
+.news-date { 
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -143,107 +145,105 @@
 /* last-news */
 
 /* news-detail */
-.news-detail, .button-primary{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.news-detail .button-primary {
+    margin-bottom: 20px;
 }
-.news-detail-img img{
+.news-detail-img img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     margin-bottom: 30px;
 }
-.news-detail-description{
+.news-detail-descr {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 300;
     text-align: justify;
 }
-.news-detail-date{
+.news-detail-date {
     margin-bottom: 30px;
 }
-
 /* news-detail */
 /* main */
 
 
 
 /* footer */
-.footer{
-    background-color: #000000;
+.footer {
+    background-color: #000;
     color: #ffffff;
     padding: 90px 0;
-
 }
 /* footer */
 
 
+
 /* media */
-@media screen and (max-width: 900px) {
-    .container{
-        margin-left: 40px;
-        margin-right: 40px;
+@media screen and (max-width:900px){
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+        
     }
     #burger-button {
         display: block;
-        background-color: #ffffff;
-        font-size: 20px;
-        padding: 20px;
+        background-color: white;
+        padding: 10px ;
+        font-size: 10px;
         border: none;
         cursor: pointer;
         border-radius: 10px;
-        margin-right: 20px;
     }
     .header-nav{
         display: none;
     }
     .home{
         display: block;
-        padding: 90px 0px;
+        padding: 90px 0;
         height: 100%;
         text-align: center;
     }
-    .home-title{
+    .home-title {
         font-size: 32px;
     }
-    .home-description{
+    .home-description {
         width: 100%;
         font-size: 14px;
     }
-    .last-news{
+    .last-news {
         height: 100%;
         display: block;
         padding: 90px 0;
     }
-    .news-row{
+    .news-row {
         justify-content: flex-start;
         flex-direction: column;
     }
-    .news-image{
+    .news-img {
         text-align: center;
     }
-    .news-image img{
+    .news-img img {
         width: 128px;
         height: 128px;
         object-fit: cover;
     }
-    .title-primary{
+    .title-primary {
         text-align: center;
     }
-    .last-news{
+    .news {
         height: 100%;
         display: block;
         padding: 90px 0;
     }
-    .news-detail{
+    .news-detail {
         height: 100%;
         display: block;
         padding: 90px 0;
     }
-    .news-detail-img{
+    .news-detail-img {
         text-align: center;
     }
-    .news-detail, .button-primary{
+    .news-detail .button-primary {
         margin-top: 10px;
         margin-bottom: 20px;
     }
